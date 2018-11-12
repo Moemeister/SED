@@ -18,7 +18,7 @@
             <ul>
                 <li><a href="#"><span class="icon-home"></span> SEDShop</a></li>
                 <li><a href="#"><span class="icon-bubble"></span> About</a></li>
-                <li><a href="#"><span class="icon-cog"></span> Logout</a></li>
+                <li class="account" ><a href="#"><span class="icon-cog"></span> Log In</a></li>
             </ul>
         </nav>
         
@@ -35,10 +35,6 @@
         <div class="container">
             <p>
                 <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quam veritatis dignissimos numquam ea non expedita consequatur recusandae assumenda itaque beatae optio odit, ex laborum ut fugit maxime officia voluptatem.</span>
-                <span>Odio corrupti ad magni perferendis recusandae praesentium voluptates ut labore consectetur, sint modi enim, provident inventore ducimus minus necessitatibus, similique repellendus nostrum. Ullam quia reiciendis quaerat labore sed iure temporibus.</span>
-                <span>Expedita nihil iusto delectus laboriosam natus mollitia, quaerat dicta pariatur consequatur veritatis itaque maxime et reprehenderit asperiores non accusantium odio fuga sed obcaecati minus officia voluptatum amet esse. Saepe, consectetur.</span>
-                <span>Quam deserunt similique soluta, voluptatum iusto facere commodi tempora saepe. Harum architecto, libero corporis, unde vel vero rem ipsam maiores maxime iste eligendi illo aliquid exercitationem. Cum distinctio eum magnam.</span>
-                <span>Atque quidem velit possimus rerum eum non aliquid doloribus officiis cum ratione pariatur impedit libero odit deserunt cupiditate, dolorem, magni totam maiores nobis quaerat nostrum vero suscipit quod iste. Vel?</span>
             </p>
         </div>
 
