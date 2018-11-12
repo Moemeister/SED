@@ -18,7 +18,7 @@
             <ul>
                 <li><a href="#"><span class="icon-home"></span> SEDShop</a></li>
                 <li><a href="#"><span class="icon-bubble"></span> About</a></li>
-                <li class="account" ><a href="#"><span class="icon-cog"></span> Log In</a></li>
+                <li class="account" ><a href="login.php"><span class="icon-cog"></span> Log In</a></li>
             </ul>
         </nav>
         

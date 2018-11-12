@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+    include "core/conection.php"
+?>
 <html>
 <head>
     <meta charset="utf-8" />
