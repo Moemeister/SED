@@ -16,7 +16,7 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#"><span class="icon-home"></span> Home</a></li>
+                <li><a href="#"><span class="icon-home"></span> SEDShop</a></li>
                 <li><a href="#"><span class="icon-bubble"></span> About</a></li>
                 <li><a href="#"><span class="icon-cog"></span> Logout</a></li>
             </ul>
@@ -28,15 +28,19 @@
 
 
 
-    <section>
+    <section class="header_banner">
+            <img class="img_banner"src="img/onlineshopping-banner.png" alt="banner online shop">
+    </section>
+
+        <div class="container">
             <p>
-                <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum praesentium dolorem ducimus ipsa totam necessitatibus culpa distinctio quis mollitia et fugit, atque, odit perspiciatis saepe optio doloribus voluptas consequatur unde.</span>
-                <span>Soluta corrupti qui nisi, dignissimos iusto reprehenderit sequi placeat quasi minima. In, architecto eveniet! Nisi nulla exercitationem nemo magnam provident velit ex hic amet. Similique sint magni nesciunt rem perspiciatis!</span>
-                <span>Sint dolore unde est repudiandae rerum quasi nihil cupiditate. Voluptate qui dolor quasi laboriosam explicabo architecto, unde voluptatum eius perferendis sit blanditiis quod illum fugit. Alias reiciendis consectetur corrupti distinctio?</span>
-                <span>Perferendis ipsam eaque repellat fuga id, hic nobis inventore voluptates dolores laborum, at maxime neque obcaecati repudiandae quo! Quod adipisci saepe mollitia sequi fugit dolore, repellat quisquam autem accusamus dignissimos?</span>
-                <span>Amet debitis aspernatur harum ipsam fugit, hic aut cupiditate quos tempora accusamus nulla nostrum tenetur quo illo iusto sint sunt exercitationem! Officiis officia debitis in, quis dicta at vero facilis.</span>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quam veritatis dignissimos numquam ea non expedita consequatur recusandae assumenda itaque beatae optio odit, ex laborum ut fugit maxime officia voluptatem.</span>
+                <span>Odio corrupti ad magni perferendis recusandae praesentium voluptates ut labore consectetur, sint modi enim, provident inventore ducimus minus necessitatibus, similique repellendus nostrum. Ullam quia reiciendis quaerat labore sed iure temporibus.</span>
+                <span>Expedita nihil iusto delectus laboriosam natus mollitia, quaerat dicta pariatur consequatur veritatis itaque maxime et reprehenderit asperiores non accusantium odio fuga sed obcaecati minus officia voluptatum amet esse. Saepe, consectetur.</span>
+                <span>Quam deserunt similique soluta, voluptatum iusto facere commodi tempora saepe. Harum architecto, libero corporis, unde vel vero rem ipsam maiores maxime iste eligendi illo aliquid exercitationem. Cum distinctio eum magnam.</span>
+                <span>Atque quidem velit possimus rerum eum non aliquid doloribus officiis cum ratione pariatur impedit libero odit deserunt cupiditate, dolorem, magni totam maiores nobis quaerat nostrum vero suscipit quod iste. Vel?</span>
             </p>
-        </section>
+        </div>
 
 
         <div class="row">
@@ -56,6 +60,30 @@
                 <div class="image" style="background-image: url(https://i.postimg.cc/0Nxx17cM/JPEG-Bild-C9-EE86-A30950-2.jpg);"></div>
                 <p class="item_description">Another Plant</p>
             </a>
+        </div>
+        <div class="container">
+            <p>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit porro numquam laudantium odio nostrum error animi nisi libero ex fugiat nam minima cupiditate, molestiae eius, officia eaque, aliquam nulla magnam?</span>
+                <span>Incidunt iusto deleniti nisi commodi magni hic ratione, explicabo quam reiciendis libero fuga ullam harum eius repudiandae fugiat provident dignissimos voluptas voluptate soluta! Temporibus voluptates, sint impedit dolor odio reprehenderit?</span>
+                <span>Ipsam minus tempore, officiis dolor, sit quasi suscipit repellat dolorum odit quis aspernatur cupiditate nesciunt perferendis totam aperiam soluta? Ex, est! Id nulla aliquam odit. Aspernatur beatae laborum omnis reprehenderit!</span>
+                <span>Optio natus commodi ab tenetur blanditiis quae laboriosam porro aperiam voluptatem, id repellendus dolore unde. Expedita numquam sapiente enim minima reprehenderit consequatur eum quos, sed pariatur ex. Cum, culpa quisquam.</span>
+                <span>Sunt eos molestiae ad architecto totam nihil similique itaque, veritatis numquam esse quaerat dolor aspernatur? Et saepe repellendus quidem placeat officiis harum delectus accusamus tenetur. Repudiandae nemo at facilis repellat!</span>
+                <span>Eius est earum quidem expedita nisi fuga vitae esse, dolorum qui rem officia maxime aliquam quia, voluptates, itaque sint id velit harum molestiae. Dolore laudantium sed omnis enim. Sapiente, veniam.</span>
+                <span>Non nisi soluta reprehenderit repellendus quod blanditiis nobis assumenda expedita ipsa fugit, distinctio at fugiat laudantium cum voluptas illo placeat tempora animi sapiente praesentium nihil eveniet? Mollitia voluptatum tenetur nemo.</span>
+                <span>Veritatis laborum nesciunt in unde dignissimos ea praesentium harum temporibus, iure eos maiores placeat laboriosam qui tempore voluptas soluta ullam molestiae expedita molestias eaque odit! Sapiente explicabo mollitia rerum asperiores!</span>
+                <span>Saepe unde, cupiditate ipsam molestias mollitia nam, cum dolorem sunt voluptatum nesciunt autem sequi ab veritatis soluta nihil incidunt quo quia eum adipisci? Quis ut quo necessitatibus fugit ipsam praesentium.</span>
+                <span>Aspernatur, quod, sapiente veniam beatae, eius dicta placeat error optio soluta illum quisquam quis necessitatibus unde ea voluptates? Magni suscipit dignissimos aliquam officia rerum necessitatibus sed ullam natus ex. Fugit.</span>
+                <span>Alias odit provident porro, aspernatur cum laboriosam assumenda eius recusandae exercitationem vero vitae deserunt quibusdam totam eos a officiis quo qui iure molestiae illo veniam debitis quaerat eveniet quod! Natus.</span>
+                <span>Explicabo saepe commodi voluptates sunt cum assumenda libero. Ab tempora consequuntur voluptas nesciunt optio laboriosam fugiat possimus. Fugit ex suscipit itaque, veritatis, eos quo dignissimos similique adipisci ea non harum?</span>
+                <span>Quae excepturi facilis magnam quam dolores nobis deserunt possimus enim cum debitis illo temporibus vel laudantium odit repellat cupiditate quas ea dignissimos quibusdam, rem hic animi. Enim magni modi inventore.</span>
+                <span>Temporibus, perferendis dignissimos et repellendus molestiae, optio quos quia tempora perspiciatis laudantium at alias. Odit ab facilis voluptates ex. Sequi voluptatibus expedita repudiandae nulla omnis blanditiis ea impedit, vel aliquam!</span>
+                <span>Blanditiis quo similique laborum tenetur veritatis, ipsum consectetur dolorum sunt aliquid ex rerum nihil animi amet consequatur quibusdam esse optio voluptates nam quis? Suscipit eum perspiciatis dicta ducimus sunt. Perspiciatis!</span>
+                <span>Neque modi, tempore deleniti libero quidem quasi dignissimos rem inventore incidunt est architecto eveniet suscipit necessitatibus atque. Voluptas pariatur esse facere dicta doloribus, at ab ut fugit eius molestiae atque?</span>
+                <span>Porro, repellat ipsam magni laborum minima perspiciatis ad dolore odio consequuntur eaque, impedit aliquam repudiandae repellendus voluptatibus velit molestiae aut error qui earum? Repudiandae obcaecati, vero accusamus itaque officiis eius!</span>
+                <span>Expedita saepe nobis ratione neque? Amet, libero. Eum unde molestiae sit libero, tempore saepe soluta dolore omnis eos maxime accusantium aut architecto velit harum error at voluptatibus labore distinctio! Sequi?</span>
+                <span>Reiciendis incidunt architecto assumenda quaerat distinctio sed natus voluptate impedit quasi laudantium facere et molestias illum debitis autem doloremque quas, recusandae corrupti quam itaque sunt culpa quidem vitae vel. Nobis.</span>
+                <span>Temporibus magni molestias pariatur, assumenda qui nisi. Repudiandae deserunt sit inventore repellendus maiores, molestias ut sequi, beatae velit exercitationem provident quod iste odit suscipit, explicabo laborum dolorum vitae dolore dicta.</span>
+            </p>
         </div>
 </body>
 </html>

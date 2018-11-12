@@ -8,12 +8,14 @@ body {
 }
  
 header {
+	position:fixed;
 	width:100%;
+	z-index: 100;
 }
  
 header nav {
     
-	background:rgba(0,0,0, .6)
+	background:rgba(0,0,0, .7)
 }
  
 .menu_bar {
@@ -43,11 +45,19 @@ header nav ul li span {
 header nav ul li a:hover {
 	background:#037E8C;
 }
- 
-section {
-	padding:20px;
+
+
+.img_banner{
+	width: 100%;
+	padding: 0;
+	height: 350px;
 }
- 
+.header_banner{
+	padding-top: 60px;
+}
+.container{
+	padding: 20px;
+}
 @media screen and (max-width:800px ) {
 	header nav {
 		width:80%;
