@@ -26,6 +26,8 @@
 
     </header>
 
+
+
     <section>
             <p>
                 <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum praesentium dolorem ducimus ipsa totam necessitatibus culpa distinctio quis mollitia et fugit, atque, odit perspiciatis saepe optio doloribus voluptas consequatur unde.</span>
@@ -35,5 +37,25 @@
                 <span>Amet debitis aspernatur harum ipsam fugit, hic aut cupiditate quos tempora accusamus nulla nostrum tenetur quo illo iusto sint sunt exercitationem! Officiis officia debitis in, quis dicta at vero facilis.</span>
             </p>
         </section>
+
+
+        <div class="row">
+            <a class="item" href="#">
+                <div class="image" style="background-image: url(https://i.postimg.cc/kG2nG90k/JPEG-Bild-C9-EE86-A30950-4.jpg);"></div>
+                <p class="item_description">Plant</p>
+            </a>
+            <a class="item" href="#">
+                <div class="image" style="background-image: url(https://i.postimg.cc/0Nxx17cM/JPEG-Bild-C9-EE86-A30950-2.jpg);"></div>
+                <p class="item_description">Another Plant</p>
+            </a>
+            <a class="item" href="#">
+                <div class="image" style="background-image: url(https://i.postimg.cc/0Nxx17cM/JPEG-Bild-C9-EE86-A30950-2.jpg);"></div>
+                <p class="item_description">Another Plant</p>
+            </a>
+            <a class="item" href="#">
+                <div class="image" style="background-image: url(https://i.postimg.cc/0Nxx17cM/JPEG-Bild-C9-EE86-A30950-2.jpg);"></div>
+                <p class="item_description">Another Plant</p>
+            </a>
+        </div>
 </body>
 </html>
