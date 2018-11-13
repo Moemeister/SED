@@ -32,7 +32,8 @@
                         }else{
                             echo '<a href="login.php"><span class="icon-cog"></span> Log In</a>';
                         }
-                    ?></li>
+                    ?>
+                </li>
             </ul>
         </nav>
         
