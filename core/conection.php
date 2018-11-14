@@ -3,7 +3,7 @@
     if ($mysqli->connect_errno) {
         echo "Fallo al conectar a MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
     }
-    echo $mysqli->host_info . "\n";
+    //echo $mysqli->host_info . "\n";
     /*$link =  'mysql:host=127.0.0.1;dbname=Shop';
     $user = 'root';
     $pass = '';
