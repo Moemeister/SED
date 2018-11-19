@@ -27,19 +27,24 @@
                 $sql =  "SELECT * FROM Sed_User";
                 $rec =  mysqli_query($mysqli,$sql);
                 $verificar = 0;
-                while($resultado =  mysqli_fetch_array($rec)){
+                while($resultado =  mysqli_fetch_object($rec)){
                     if($resultado->username_sed == $_POST['user']){
                         $verificar = 1;
+                        
                     }
                 }
                 if($verificar == 0){
                     $nom = $_POST['name'];
                     $user = $_POST['user'];
                     $pass = hash('SHA256',$_POST['pass']);
-                    $mysqli->query("INSERT INTO Sed_User (name_sed,username_sed,pass_sed,id_category_us) VALUES ('$nom','$user','$pass',2)");
-                    mysqli_query($mysqli,$sql);
-                    echo 'Te has registrado';
-
+                    $stmt = $mysqli->prepare("INSERT INTO Sed_User (name_sed,username_sed,pass_sed,id_category_us) VALUES (?,?,?,2)");
+                    $stmt->bind_param('sss',$nom,$user,$pass);
+                    $stmt->execute();
+                    $stmt->close();
+                    echo "<script type='text/javascript'>alert('Your account has been created');</script>";
+                    header("location: login.php");
+                }else{
+                    echo "<script type='text/javascript'>alert('This username is already taken');</script>";
                 }
             }
         ?>
