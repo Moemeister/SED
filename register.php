@@ -41,8 +41,8 @@
                     $stmt->bind_param('sss',$nom,$user,$pass);
                     $stmt->execute();
                     $stmt->close();
-                    echo "<script type='text/javascript'>alert('Your account has been created');</script>";
-                    header("location: login.php");
+                    echo "<script type='text/javascript'>alert('Your account has been created');window.location.href='login.php';</script>";
+                   // header("location: login.php");
                 }else{
                     echo "<script type='text/javascript'>alert('This username is already taken');</script>";
                 }
