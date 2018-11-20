@@ -24,13 +24,23 @@
             <ul>
                 <li><a href="#"><span class="icon-home"></span> SEDShop</a></li>
                 <li><a href="#"><span class="icon-bubble"></span> About</a></li>
-                <li class="account" >
+                <li class="account">
                     <?php
                         if(isset($_SESSION['username'])){
-                            echo '<a href="logout.php"><span class="icon-cog"></span>'.$_SESSION['username'].' Log Out</a>';
+                            echo '<a href="#><span class="icon-cog"></span>'.$_SESSION['username'].'</a>';
+                            echo '<ul class="children">';
+                            
+                                echo '<li><a href="#"><span class="icon-cog"></span> Settings</a></li>';
+                            
+                        
+                                echo '<li><a href="logout.php"><span class="icon-cog"></span> Logout</a></li>';
+                    
+                            echo '</ul>';
+                            
 
                         }else{
-                            echo '<a href="login.php"><span class="icon-cog"></span> Log In</a>';
+                                echo '<a href="login.php"><span class="icon-cog"></span> Log In</a>';
+                        
                         }
                     ?>
                 </li>

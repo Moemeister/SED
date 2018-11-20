@@ -6,3 +6,8 @@ function emptyFields(){
         alert("Debe rellenar todos los campos");
     }
 }
+function passRegex(){
+    var pass = document.getElementById('pass').value;
+    var regex = o;
+    var passresult =  regex.test(pass);
+}

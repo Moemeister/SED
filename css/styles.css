@@ -11,14 +11,18 @@ body {
 }
  
 header {
-	position:fixed;
+	
 	width:100%;
-	z-index: 100;
 }
  
 header nav {
     
-	background:rgba(0,0,0, .7)
+	background:rgba(0,0,0, .7);
+	z-index: 1000;
+	max-width: 100%;
+	width: 100%;
+	margin: 0 auto;
+	position:fixed;
 }
  
 .menu_bar {
@@ -26,20 +30,17 @@ header nav {
 }
  
 header nav ul {
-	overflow:hidden;
+	/*overflow:hidden;*/
 	list-style:none;
 }
  
 header nav ul li {
+	display: inline-block;
+	position: relative;
 	float:left;
 }
  
-header nav ul li a {
-	color:#fff;
-	padding:20px;
-	display:block;
-	text-decoration:none;
-}
+
  
 header nav ul li span {
 	margin-right:10px;
@@ -50,6 +51,29 @@ header nav ul li a:hover {
 }
 header nav ul li.account{
 	float: right;
+}
+header nav ul li.account:hover .children{
+	display: block;
+
+}
+header nav ul li.account .children{
+	display: none;
+	background: rgba(0,0,0, .7);
+	position: absolute;
+	width: 150%;
+	z-index: 1000;
+
+}
+header nav ul li.account .children li{
+	display: block;
+	overflow: hidden;
+	border-bottom: 1px solid rgba(255,255,255, .5);
+}
+header nav ul li a {
+	color:#fff;
+	padding:20px;
+	display:block;
+	text-decoration:none;
 }
 
 .img_banner{
