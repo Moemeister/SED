@@ -9,14 +9,20 @@
             $password = hash('sha256',$_POST['pass']);
             
           //  $sql = "SELECT username_sed, pass_sed FROM Sed_User WHERE username_sed = '$_POST[user]'";
-            $sql = $mysqli->prepare("SELECT username_sed, pass_sed FROM Sed_User WHERE username_sed = ? AND pass_sed = ?") ;
+            $sql = $mysqli->prepare("SELECT id_user,username_sed, pass_sed FROM Sed_User WHERE username_sed = ? AND pass_sed = ?") ;
             $sql->bind_param('ss',$username,$password);
             $sql->execute();
-            $sql->bind_result($username,$password);
+            //$ans = $sql->get_result();
+            //$row = $ans->fetch_assoc();
+            
+            $sql->bind_result($id,$username,$password);
             $sql->store_result();
             if($sql->num_rows == 1){
                 if($sql->fetch()){
-                    $_SESSION['username'] = $_POST['user'];
+                   // $ans = $sql->get_result();
+                   // $row = $ans->fetch();
+                    $_SESSION['username'] = $_POST['user']; 
+                    $_SESSION['idC'] = $id;
                     header("location: index.php");
                 }
             }else{

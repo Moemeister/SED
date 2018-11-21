@@ -51,6 +51,7 @@ header nav ul li a:hover {
 }
 header nav ul li.account{
 	float: right;
+	margin-right: 40px;
 }
 header nav ul li.account:hover .children{
 	display: block;
@@ -62,6 +63,7 @@ header nav ul li.account .children{
 	position: absolute;
 	width: 150%;
 	z-index: 1000;
+	
 
 }
 header nav ul li.account .children li{

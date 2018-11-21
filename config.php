@@ -1,25 +1,50 @@
 <!DOCTYPE html>
+<?php
+    session_start();
+    include 'core/conection.php';
+    if (!isset($_SESSION['username'])){
+        echo "<script>alert('YOU DONT HAVE AUTHORIZATION');window.location.href='index.php'</script>";
+
+    }
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style_settings.css" />
-
+    <script src="js/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/validations.js"></script>
     <title>Config page</title>
 </head>
 <body>
+    <?php
+        $sql = $mysqli->prepare("SELECT id_user, name_sed, username_sed, pass_sed FROM Sed_User WHERE id_user = ?") ;
+        $sql->bind_param('i',$_SESSION['idC']);
+        $sql->execute();
+        $result = $sql->get_result();
+        $row = $result->fetch_assoc();
+        $_SESSION['idUser'] = $row['id_user'];
+       
+
+    ?>
     <div class="config-box">
         <h1>Settings</h1>
-        <form action="" method="post">
-            <label for="nombre">Name:</label>
-            <input type="text" name="nombre" id="nombre" disabled>
-            <label for="username">Username:</label>
-            <input type="text" name="username" id="username">
-            <label for="pwd">Password:</label>
-            <input type="password" name="pwd" id="pwd">
-            <input type="submit" value="change" name="change">
+        <form id="id-form"action="2FA/settings.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" value="<?php echo $row['name_sed'];?>">
+            <label for="user">Username:</label>
+            <input type="text" name="user" id="user" value="<?php echo $row['username_sed'];?>">
+            <label for="pass">Password:</label>
+            <input type="password" name="pass" id="pass">
+            <label for="pass2">Confirm Password:</label>
+            <input type="password" name="pass2" id="pass2">
+            <input type="submit" value="change" name="change" onclick= "emptyFieldsReg();">
         </form>
+        <?php
+             
+        ?>
     </div>
 </body>
 </html>

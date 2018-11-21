@@ -7,6 +7,8 @@ function emptyFieldsReg(){
         alert("Debe rellenar todos los campos");
     }
 }
+
+
 function emptyFields(){
     username = document.getElementById("user").value;
     pass = document.getElementById("pass").value;
