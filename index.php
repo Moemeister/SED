@@ -30,7 +30,7 @@
                             echo '<a href="#><span class="icon-cog"></span>'.$_SESSION['username'].'</a>';
                             echo '<ul class="children">';
                             
-                                echo '<li><a href="#"><span class="icon-cog"></span> Settings</a></li>';
+                                echo '<li><a href="config.php"><span class="icon-cog"></span> Settings</a></li>';
                             
                         
                                 echo '<li><a href="logout.php"><span class="icon-cog"></span> Logout</a></li>';

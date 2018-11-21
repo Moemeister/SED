@@ -9,7 +9,7 @@
     <title>Login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style_login.css" />
-    <script src="main.js"></script>
+    <script src="js/validations.js"></script>
 </head>
 <body>
     <div class="login-box">
@@ -19,7 +19,7 @@
             <input type="text" name="user" id="user" placeholder="Enter Username">
             <label for="pass">Pass</label>
             <input type="password" name="pass" id="pass" placeholder="Enter Password">
-            <input type="submit"name="login" value="Log In">
+            <input type="submit"name="login" value="Log In" id="login" onclick="emptyFields()">
             <a href="register.php">Don't have An account?</a>
             
         </form>

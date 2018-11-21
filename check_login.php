@@ -20,40 +20,12 @@
                     header("location: index.php");
                 }
             }else{
-                echo "<script type='text/javascript'>alert('Please enter your information correctly');</script>";
-                header("location: login.php");
+                //echo 'lel';
+                echo "<script type='text/javascript'>alert('Please enter your information correctly');window.location.href='login.php';</script>";
+                //header("location: login.php");
             }
-
-           /* $result = mysqli_prepare($mysqli,$sql);
-            $ok = mysqli_stmt_bind_param($result,"s",$_POST['user']);
-            $ok = mysqli_stmt_execute($result);
-            if($ok==false){
-                echo "Error";
-
-            }else{
-                $pwd = hash('sha256',$_POST['pass']);
-             if($pwd==$ok['pass_sed']){
-                 $_SESSION['username'] = $_POST['user'];
-                 header("location: index.php");
-             }else{
-                 echo 'nope';
-             }
-            }
-            if ($sql->exceute(array($_POST['user']))){
-                while($fila = $sql->fetch()){
-                    
-                }
-
-            }
-            $result =  mysqli_query($mysqli,$sql);
-            $session = mysqli_fetch_array($result);
-            $pwd = hash('sha256',$_POST['pass']);
-             if($pwd==$session['pass_sed']){
-                 $_SESSION['username'] = $_POST['user'];
-                 header("location: index.php");
-             }else{
-                 echo 'nope';
-             } */
+        }else{
+            header("location: login.php");
         }
     }
 
