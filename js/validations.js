@@ -6,9 +6,10 @@ function emptyFieldsReg(){
     if(nombre == "" || username == "" || pass == "" || pass2 == ""){
         alert("Debe rellenar todos los campos");
     }
-    var regex2 = new RegExp("^(?=.*[A-Z].*[0-9].{8,})")
+    //var regex2 = new RegExp("^(?=.*[A-Z].*[0-9].{8,})");
+    var regex2 =  new RegExp("^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{8,}$");
     if (!(regex2.test(pass))){
-        alert("La contraseña no es segura");
+        alert("La contraseña no es segura, Usuario no creado");
         window.location.href="register.php";
         
     }
@@ -21,9 +22,9 @@ function emptyFieldsReg2(){
     if(nombre == "" || username == "" || pass == "" || pass2 == ""){
         alert("Debe rellenar todos los campos");
     }
-    var regex2 = new RegExp("^(?=.*[A-Z].*[0-9].{8,})")
+    var regex2 =  new RegExp("^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{8,}$");
     if (!(regex2.test(pass))){
-        alert("La contraseña no es segura");
+        alert("La contraseña no es segura, los cambios no se han efectuado");
         window.location.href="config.php";
         
     }

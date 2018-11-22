@@ -53,17 +53,20 @@
                     if($verificar == 0){
                         $pwd = $_POST['pass'];
                         $pwd2 = $_POST['pass2'];
-                        if($pwd == $pwd2){
-                            $nom = $_POST['name'];
-                            $user = $_POST['user'];
-                            $pass = hash('SHA256',$_POST['pass']);
-                            $stmt = $mysqli->prepare("INSERT INTO Sed_User (name_sed,username_sed,pass_sed,id_category_us) VALUES (?,?,?,2)");
-                            $stmt->bind_param('sss',$nom,$user,$pass);
-                            $stmt->execute();
-                            $stmt->close();
-                            echo "<script type='text/javascript'>alert('Your account has been created');window.location.href='login.php';</script>";
-                        }else{
-                            echo "<script> alert('Passwords does not match')</script>";
+                        if (preg_match("/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{8,}$/",$pwd)){
+                            if($pwd == $pwd2){
+                                $nom = $_POST['name'];
+                                $user = $_POST['user'];
+                                $pass = hash('SHA256',$_POST['pass']);
+                                $stmt = $mysqli->prepare("INSERT INTO Sed_User (name_sed,username_sed,pass_sed,id_category_us) VALUES (?,?,?,2)");
+                                $stmt->bind_param('sss',$nom,$user,$pass);
+                                $stmt->execute();
+                                $stmt->close();
+                                echo "<script type='text/javascript'>alert('Your account has been created');window.location.href='login.php';</script>";
+                            }else{
+                                echo "<script> alert('Passwords does not match')</script>";
+                            }
+                            
                         }
                         
                     // header("location: login.php");
