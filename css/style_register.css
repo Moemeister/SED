@@ -3,9 +3,12 @@
 body{
     margin:0;
     padding: 0;
+    background-size: 100% 100%;
     font-family: 'Oswald', sans-serif;
     background: url('../img/wallpaper_login.jpg')no-repeat center top;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
 }
 @media screen and (max-width:800px){
@@ -17,8 +20,8 @@ body{
 }
 .register-box{
     
-    width: 320px;
-    height: 600px;  
+    width: 400px;
+    height: 650px;  
     background: rgb(10, 21, 37);
     border-radius: 20px;
     color: #fff;
@@ -28,8 +31,8 @@ body{
     transform: translate(-50%, -50%);
     box-sizing: border-box;
     padding: 25px 50px 70px 50px;
-    margin-top  : 30px;
-    margin-bottom: 30px;
+    margin-top  : 50px;
+    margin-bottom: 50px;
       
 }.register-box h1 {
     margin: 0;

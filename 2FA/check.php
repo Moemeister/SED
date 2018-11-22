@@ -61,7 +61,7 @@ if (!$checkResult) {
                     $stmt->execute();
                     $stmt->close();
                     echo "<script type='text/javascript'>alert('Your information has been modified');window.location.href='../index.php';</script>";
-
+                    $_SESSION['username'] = $_SESSION['nick'];
                 ?>
 
             </div>

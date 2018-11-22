@@ -25,6 +25,8 @@
             <label for="pass">Confirm Password</label>
             <input type="password" name="pass2" id="pass2" placeholder="Confirm Password" onkeyup='check();' >
             <span id='message'></span>
+            <p>Your password has to contain:</p> 
+            
             <ul>
                 <li id="mayus">Mayusculas</li>
                 <li id="number">Numeros</li>
