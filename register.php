@@ -1,5 +1,11 @@
 <!DOCTYPE html>
-<?php include 'core/conection.php'; ?>
+<?php
+    session_start();
+    include 'core/conection.php'; 
+    if ($_SESSION['username'] != null){
+        header("location: index.php");
+    }
+?>
 <html>
 <head>
     <meta charset="utf-8" />

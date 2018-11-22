@@ -1,6 +1,8 @@
 <?php
 
-
+if ($_SESSION['config'] == null){
+    header("location: ../index.php");
+}
 class Authenticator
 {
     protected $length = 6;

@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <?php
-    include "core/conection.php"
+    session_start();
+    include "core/conection.php";
+    if ($_SESSION['username'] != null){
+        header("location: index.php");
+    }
 ?>
 <html>
 <head>

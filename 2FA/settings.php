@@ -1,6 +1,9 @@
 <?php
     session_start();
     require "authenticator.php";
+    if ($_SESSION['config'] == null){
+        header("location: ../config.php");
+    }
 
     $Authenticator = new Authenticator();
 if (!isset($_SESSION['auth_secret'])) {

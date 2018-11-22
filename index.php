@@ -1,5 +1,6 @@
 <?php
     session_start();
+    $_SESSION['config'] = null;
     /*if ($_SESSION['username'] == null){
         echo 'NO AUTHORIZATION';
     }*/

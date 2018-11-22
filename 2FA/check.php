@@ -1,6 +1,8 @@
 <?php
 session_start();
-
+if ($_SESSION['config'] == null){
+    header("location: ../index.php");
+}
 include '../core/conection.php';
 require "authenticator.php";
 if ($_SERVER['REQUEST_METHOD'] != "POST") {

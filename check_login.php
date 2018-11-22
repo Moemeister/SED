@@ -1,6 +1,8 @@
 <?php
     session_start();
-
+    if ($_SESSION['username'] != null){
+        header("location: index.php");
+    }
     include 'core/conection.php';
     if(isset($_POST['login'])){
         if(isset($_POST['user']) && !empty($_POST['user']) &&

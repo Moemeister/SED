@@ -26,7 +26,7 @@
         $result = $sql->get_result();
         $row = $result->fetch_assoc();
         $_SESSION['idUser'] = $row['id_user'];
-       
+        $_SESSION['config'] = $_SESSION['idUser'];
 
     ?>
     <div class="config-box"id ="config-box">
