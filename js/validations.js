@@ -14,7 +14,7 @@ function emptyFieldsReg(){
         
     }
 }
-function emptyFieldsReg2(){
+/*function emptyFieldsReg2(){
     nombre = document.getElementById("name").value;
     username = document.getElementById("user").value;
     pass = document.getElementById("pass").value;
@@ -24,12 +24,31 @@ function emptyFieldsReg2(){
     }
     var regex2 =  new RegExp("^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{8,}$");
     if (!(regex2.test(pass))){
+        console.log(regex2.test(pass));
         alert("La contraseña no es segura, los cambios no se han efectuado");
-        window.location.href="config.php";
+        window.location.href="config.php",true;
+        
+        
+    }
+}*/
+function emptyFieldsReg2(e){
+    nombre = document.getElementById("name").value;
+    username = document.getElementById("user").value;
+    pass = document.getElementById("pass").value;
+    pass2 = document.getElementById("pass2").value;
+    if(nombre == "" || username == "" || pass == "" || pass2 == ""){
+        alert("Debe rellenar todos los campos");
+    }
+    var regex2 =  new RegExp("^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{8,}$");
+    if (!(regex2.test(pass))){
+        console.log(regex2.test(pass));
+        alert("La contraseña no es segura, los cambios no se han efectuado");
+        e.preventDefault();
+       // window.location.href="config.php",true;
+        return false;
         
     }
 }
-
 
 function emptyFields(){
     username = document.getElementById("user").value;

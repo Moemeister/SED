@@ -31,7 +31,7 @@
     ?>
     <div class="config-box"id ="config-box">
         <h1>Settings</h1>
-        <form id="id-form"action="2FA/settings.php" method="post">
+        <form id="id-form"action="2FA/settings.php" method="post" onsubmit="return emptyFieldsReg2(event)">
             
             <label for="name">Name:</label>
             <input type="text" name="name" id="name" value="<?php echo $row['name_sed'];?>">
@@ -49,7 +49,7 @@
                 <li id="number">Numeros</li>
                 <li id="len">8 caracteres</li>
             </ul>
-            <input type="submit" value="change" name="change" onclick= "emptyFieldsReg2();">
+            <input type="submit" value="change" name="change">
         </form>
         <?php
              
